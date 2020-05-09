@@ -5,24 +5,15 @@ class Post extends Component {
 		postItem: this.props.postItem,
 		votecount: 0
 	};
-	upvote = () => {
-		this.setState({
-			votecount: this.state.votecount + 1
-		});
-	};
-	downvote = () => {
-		this.setState({
-			votecount: this.state.votecount - 1
-		});
-	};
+	
 	render() {
 		const postItem = this.state.postItem;
 		return (
 			<div className='post'>
 				<div className='votes'>
-					<button onClick={this.upvote}> upvote </button>
-					<p>{this.state.votecount}</p>
-					<button onClick={this.downvote}>downvote</button>
+					<button onClick={() =>this.props.upvote(postItem.id)}> upvote </button>
+					<p>{postItem.votes}</p>
+					<button onClick={() => this.props.downvote(postItem.id)}>downvote</button>
 				</div>
 				<img src={postItem.image} className='image' />
 				<div>

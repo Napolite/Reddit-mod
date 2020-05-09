@@ -11,7 +11,8 @@ const items=[
         time: "20 minutes ago",
         user: "Ano Itu Cloud",
         comments: "116 comments",
-        image:Ano
+        image:Ano,
+        votes:0
     },
     {
         id:2,
@@ -20,7 +21,8 @@ const items=[
         time: "9 hours ago",
         user: "Rosanwo Girl",
         comments: "3,007 comments",
-        image:Happy
+        image:Happy,
+        votes: 5
     },
     {
         id:3,
@@ -29,7 +31,8 @@ const items=[
         time: "1 hours ago",
         user: "AudreyPx",
         comments: "405 comments",
-        image:Audrey
+        image:Audrey,
+        votes:15
     },
     {
         id:4,
@@ -38,7 +41,8 @@ const items=[
         time: "30 mins ago",
         user: "Miraclx",
         comments: "110 comments",
-        image:miraclx
+        image:miraclx,
+        votes:70
     },
     {
         id:5,
@@ -47,7 +51,8 @@ const items=[
         time:'55 mins ago',
         user:'Constantino',
         comments:'5739 comments',
-        image:hand
+        image:hand,
+        votes:5000
     }
 ]
 
