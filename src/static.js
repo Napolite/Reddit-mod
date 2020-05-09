@@ -22,7 +22,7 @@ const items=[
         user: "Rosanwo Girl",
         comments: "3,007 comments",
         image:Happy,
-        votes: 5
+        votes: 0
     },
     {
         id:3,
@@ -32,7 +32,7 @@ const items=[
         user: "AudreyPx",
         comments: "405 comments",
         image:Audrey,
-        votes:15
+        votes:0
     },
     {
         id:4,
@@ -42,7 +42,7 @@ const items=[
         user: "Miraclx",
         comments: "110 comments",
         image:miraclx,
-        votes:70
+        votes:0
     },
     {
         id:5,
@@ -52,7 +52,7 @@ const items=[
         user:'Constantino',
         comments:'5739 comments',
         image:hand,
-        votes:5000
+        votes:0
     }
 ]
 

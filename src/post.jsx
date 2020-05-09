@@ -11,9 +11,9 @@ class Post extends Component {
 		return (
 			<div className='post'>
 				<div className='votes'>
-					<button onClick={() =>this.props.upvote(postItem.id)}> upvote </button>
+					<button onClick={() =>this.props.upvote(this.props.postItem)}> upvote </button>
 					<p>{postItem.votes}</p>
-					<button onClick={() => this.props.downvote(postItem.id)}>downvote</button>
+					<button onClick={() => this.props.downvote(this.props.postItem)}>downvote</button>
 				</div>
 				<img src={postItem.image} className='image' />
 				<div>

@@ -6,20 +6,24 @@ class App extends Component {
 	state = {
 		items: items
 	};
-	// upvote = (id) => {
-	// 	this.setState({
-	// 		votecount: this.state.items.indexOf(items.id).votes+1
-	// 	});
-	// };
-	// downvote = (id) => {
-	// 	this.setState({
-	// 		votecount: this.state.items.indexOf(items.id).votes-1
-	// 	});
-	// };
+	upvote = (id) => {
+		const item = [...this.state.items]
+		item[item.indexOf(id)].votes+=1
+		this.setState({
+			items:item
+		})
+	};
+	downvote = (id) => {
+		const item = [...this.state.items]
+		item[item.indexOf(id)].votes-=1
+		this.setState({
+			items:item
+		})
+	};
 	render() {
 		return (
 			<div className='main'>
-				{this.state.items.map(item => {
+				{this.state.items.sort((a,b)=>{return b.votes-a.votes}).map(item => {
 					return <Post key={item.id} postItem={item} upvote={this.upvote} downvote={this.downvote} />;
 				})}
 			</div>
