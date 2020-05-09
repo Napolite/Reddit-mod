@@ -9,7 +9,53 @@ body {
 
 .main{
   margin:0 auto;
-  border:5px solid green;
+  border:5px solid grey;
   min-height: 90vh;
   width: 70%;
+  border-top:0px;
+  border-bottom:0px;
+  position: relative;
+  top:20px;
+}
+.post{
+  margin-bottom:20px;
+  margin-left: 10px;
+  display: flex;
+}
+.post-name{
+  color:rgb(233,100,100);
+  font-size: 25px;
+  font-weight: 500;
+}
+.url{
+  color:grey;
+  font-size:12px;
+}
+.image{
+  width:75px;
+  height:77px;
+  margin-right: 10px;
+}
+.submit{
+  color:grey;
+  font-size:15px;
+  display:flex;
+  align-content: space-between;
+  /* justify-content: space-between; */
+}
+.submit :nth-child(2){
+  margin-left: 5px;
+  color:black;
+  font-size:15px;
+}
+.comments{
+  color:grey;
+  font-size:15px;
+}
+.votes{
+  margin-right:5px;
+}
+.votes button{
+  background: white;
+  border:none;
 }
